@@ -2,8 +2,6 @@
 
 Code for Volumetric Multimodal Cross-Attention for Any-Order Modality Interactions paper.
 
-[Repository under construction]
-
 Example of Volumetric Multimodal Attention (VMA) for three modalities:
 
 ```python
@@ -45,3 +43,8 @@ def compute_attention_scores_parallel_gram(query, key_1, key_2, eps=1e-8):
 
     return -torch.sqrt(torch.clamp(det, min=eps))
 ```
+
+Attention matrix visualization for head 1 of layer 5, GRAMformer in the first column, then pairwise MulT for the two modalities.
+
+![](att_visualization.png)
+
